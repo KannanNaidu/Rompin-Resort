@@ -1,0 +1,104 @@
+/* catamaran-800 - latin */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Catamaran'),
+  url('../fonts/catamaran-v7-latin/catamaran-v7-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/catamaran-v7-latin/catamaran-v7-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato'),
+  url('../fonts/lato-v17-latin/lato-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/lato-v17-latin/lato-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 800 !important;
+}
+
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ee0979;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  /*text-transform: uppercase;*/
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: rgba(255,255,255,1);
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+  color: rgba(255,255,255,.75);
+}
+
+.home-area {
+  width: 100%;
+  background: url('../images/rompin-island.jpg') no-repeat scroll center center / cover;
+  padding-top: 5rem;
+  color: #ffffff;
+  padding-bottom: 5rem;
+}
+
+.internal-area {
+  margin-top: 8rem;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0787de;
+  background: linear-gradient(45deg, #48bdf4 0%, #0787de 100%);
+  opacity: 0.3;
+  z-index: -2;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.services {
+  padding: 15rem 0;
+}
+
